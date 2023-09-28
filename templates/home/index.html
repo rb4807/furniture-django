@@ -1,0 +1,83 @@
+{% extends 'header_footer/base.html' %}
+{% load static %}
+{% block content %}
+    <div id="wrapper-site">
+        <div id="content-wrapper" class="full-width">
+            <div id="main">
+                <section class="page-home">
+                    <div class="spacing-10 group-image-special">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Arm chair</span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect14.jpg' %}" alt="banner-1" title="banner-1">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Side table</span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect15.jpg' %}" alt="banner-2" title="banner-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Bookshelves </span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect16.jpg' %}" alt="banner-2" title="banner-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Desk</span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect17.jpg' %}" alt="banner-2" title="banner-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Bed</span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect18.jpg' %}" alt="banner-2" title="banner-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="block">
+                                    <div class="effect">
+                                        <a href="product-grid-sidebar-left.html">
+                                            <span>Wall shelves</span>
+                                            <img class="img-fluid width-100" src="{% static 'images/effect19.jpg' %}" alt="banner-2" title="banner-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>   
+        </div>   
+    </div>
+    <div class="content-showmore text-center has-showmore">
+        <a href="{% url 'product' %}">
+            <button type="button" class="btn btn-default novShowMore" name="novShowMore" data-loading="Loading..." data-loadmore="Load More Products">
+                <span>Load More Products</span>
+            </button>
+        </a>
+    </div>  
+{% endblock %}
